@@ -1,5 +1,7 @@
 const path = require('path');
 const express = require('express');
+const { connectDB } = require ('./startup/db');
+
 const { ApolloServer } = require('apollo-server-express');
 
 const { loadFilesSync } = require('@graphql-tools/load-files');
@@ -29,3 +31,4 @@ async function startApolloServer() {
   }
   
   startApolloServer();
+  connectDB();
