@@ -1,1 +1,1 @@
-First Graphql/Apollo Server
+Sample of an Apollo Server to understand its basics.
